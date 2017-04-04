@@ -1,0 +1,78 @@
+.cbp-qtrotator {
+	position: relative;
+	width: 100%;
+	margin-bottom:60px;
+}
+
+.cbp-qtrotator .cbp-qtcontent {
+	position: absolute;
+	border-bottom: 1px solid #445059;
+	top: 0;
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+}
+
+.no-js .cbp-qtrotator .cbp-qtcontent {
+	border-bottom: none;
+}
+
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent {
+	position: relative; 
+	z-index: 100;
+	pointer-events: auto;
+	opacity: 1;
+}
+
+.cbp-qtrotator .cbp-qtcontent:before,
+.cbp-qtrotator .cbp-qtcontent:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-qtrotator .cbp-qtcontent:after {
+	clear: both;
+}
+
+.cbp-qtprogress {
+	position: absolute;
+	background: #19B1DD;
+	height: 1px;
+	width: 0%;
+	bottom: 0;
+	z-index: 1000;
+}
+
+.cbp-qtrotator blockquote {
+	margin:0;
+	padding: 0;
+	float:left;
+	width:88%; 
+	margin-bottom:30px;
+}
+.cbp-qtrotator blockquote h4 { color:#FFF; font-size:16px; font-weight:500; margin-bottom:0; }
+.cbp-qtrotator blockquote p {
+	font-size: 14px;
+	color: #FFF;
+	font-weight: 300;
+	font-style:italic;
+	margin: 0.4em 0 1em;
+}
+.cbp-qtrotator blockquote span { font-size:12px; color:#FFF; display:block; margin-bottom:20px; }
+
+.cbp-qtrotator blockquote footer {
+	font-size: 1.2em;
+}
+
+.cbp-qtrotator blockquote footer:before {
+	content: '― ';
+}
+
+.cbp-qtrotator .cbp-qtcontent img {
+	float: left;
+	margin-right: 3em;
+	width:80px;
+	border:3px solid #FFF;
+	border-radius:50%;
+}

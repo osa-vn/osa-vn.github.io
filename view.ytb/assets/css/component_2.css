@@ -1,0 +1,92 @@
+.sb-search {
+	position: absolute;
+	right:0;
+	top:20px;
+	width: 15px;
+	height:45px;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+
+.sb-search-input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	outline: none;
+	background: #fff;
+	width: 100%;
+	margin: 0;
+	z-index: 10;
+	padding:11px 12px;
+	font-family: inherit;
+	font-size:14px;
+	border-radius:20px;	
+}
+
+.sb-search-input::-webkit-input-placeholder { color: #CCC; }
+.sb-search-input:-moz-placeholder {	color: #CCC; }
+.sb-search-input::-moz-placeholder { color: #CCC; }
+.sb-search-input:-ms-input-placeholder { color: #CCC; }
+
+.sb-icon-search,
+.sb-search-submit  {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	cursor: pointer;
+}
+
+.sb-search-submit {
+	background: #fff; /* IE needs this */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    opacity: 0;
+	color: transparent;
+	border: none;
+	outline: none;
+	z-index: -1;
+}
+
+.sb-icon-search {
+	color: #FFF;
+	z-index: 90;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	font-size:12px;
+	text-transform: none;
+	background:#19B1DD;	
+	width:40px; height:40px;
+	border-radius:50%; -moz-border-radius:50%; -webkit-border-radius:50%;
+	-webkit-font-smoothing: antialiased;
+}
+
+.sb-icon-search:before {
+	content: "\f002"; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit; position:relative; top:7px;
+}
+
+/* Open state */
+.sb-search.sb-search-open,
+.no-js .sb-search {
+	width:290px; position:absolute; right:0;
+}
+
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {	
+	color: #FFF;
+	z-index: 11;
+}
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+	z-index: 90;
+}
+
+.sb-icon-search:hover { background:#0d8cb1; transition:all 0.5s ease-out 0s; -webkit-transition:all 0.5s ease-out 0s; -moz-transition:all 0.5s ease-out 0s; }
+.sb-search.sb-search-open .sb-search-input { padding-left:20px; padding-right:60px; }

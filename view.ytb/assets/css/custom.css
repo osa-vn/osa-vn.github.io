@@ -1,0 +1,56 @@
+ .block-title {
+     font-size: 18px;
+     color: #2b2b2b;
+     font-weight: 600;
+ }
+ 
+ .sk-rotating-plane {
+     width: 40px;
+     height: 40px;
+     background-color: #37af1a;
+     margin: 40px auto;
+     margin-top: 20%;
+     -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+     animation: sk-rotatePlane 1.2s infinite ease-in-out;
+ }
+ 
+ @-webkit-keyframes sk-rotatePlane {
+     0% {
+         -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+     }
+     50% {
+         -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+     }
+     100% {
+         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+     }
+ }
+ 
+ @keyframes sk-rotatePlane {
+     0% {
+         -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+         transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+     }
+     50% {
+         -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+         transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+     }
+     100% {
+         -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+         transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+     }
+ }
+ 
+ .services-desc p {
+     font-size: 16px;
+ }
+ 
+ .services-block h3,
+ .blog-block h3,
+ .portfolio-grid-box-block h3,
+ .client-block h3 {
+     font-size: 16px;
+ }
