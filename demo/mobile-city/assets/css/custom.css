@@ -1,0 +1,12 @@
+.icon_logo_base {
+    /*width: 220px;
+    height: 40px;
+    background-image: url('../images/baseline.png');
+    background-repeat: no-repeat;
+    background-size: 220px 40px;*/
+    width: 240px;
+    height: 60px;
+    background-image: url(../images/logo-script-light.svg);
+    background-repeat: no-repeat;
+    background-size: 248px 65px;
+}
