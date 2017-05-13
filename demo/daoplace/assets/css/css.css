@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Kristi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kristi'), url(../fonts/EBOxo6OoarykMRxohIxAtw.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Dao Place';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dao Place'), url(../fonts/dao-place-font.ttf) format('truetype');
+}
+
+ 
