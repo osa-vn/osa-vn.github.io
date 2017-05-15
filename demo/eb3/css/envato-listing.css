@@ -1,0 +1,73 @@
+/* Envato Product Listing */
+
+.env_product {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+	position: relative;
+}
+.env_title h5{	
+	margin-bottom: 70px;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+}
+.env_product .main_img {
+	float: left;
+	position: relative;
+	width: 100%;
+}
+.env_product .main_img img {
+	width: 100%;
+	height: auto;
+}
+.env_product .details{
+	position: absolute;
+	transition: all ease 0.5s;
+	transform-origin: bottom;
+	opacity: 0;
+}
+.env_product:hover .details{
+	opacity: 1;
+	background-color:rgba(0, 0, 0, 0.9);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+    padding-top: 14%;
+    color: #FFF;
+}
+.env_product:hover .details h5{	
+    color: #FFF;
+}
+.env_product .details .price {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.env_product .details .rating {
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+.env_product .details .rating i {
+	color: #fec42d;
+	padding: 0 2px;
+}
+
+.env_product a.center.header-btn-one {
+    opacity: 1 !important;
+	transition: all ease 0.6s;
+}
+.env_product a.center.header-btn-one:hover {
+    background-color: #FFF !important;
+}
+.env_product a.center.header-btn-one:hover span{
+	color: #333 !important;
+}
+
+
+/* Lazy Laod */
+.ls_lazyimg {
+	/*background:url(../../images/loading.gif) no-repeat !important;*/
+	background-position: 48% 48% !important;
+}
